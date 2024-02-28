@@ -1,0 +1,1493 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  margin: 20px auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 576px;
+  }
+}
+header {
+  height: 90px;
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.nav ul > li {
+  position: relative;
+}
+
+.nav ul > li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #ce1212;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.nav ul > li:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  padding: 19px 0;
+  color: #7f7f90;
+  font-size: 20px;
+}
+
+.dropdown {
+  margin-top: 20px;
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #212529;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.dropdown li {
+  padding: 10px 30px;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.dropdown-li {
+  position: relative;
+}
+
+.dropdown-li:hover .dropdown {
+  display: block;
+}
+
+.yummy {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+}
+
+.dot {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ce1212;
+}
+
+.book a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 7px;
+  background-color: #ce1212;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.book a:hover {
+  background-color: #e45454;
+}
+
+.secone {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.secone-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+  max-width: 43%;
+}
+.secone-left h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 60px;
+  color: #37373f;
+}
+.secone-left p {
+  color: #37373f;
+  font-family: "Open Sans", sans-serif;
+}
+.secone-left .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  height: 67px;
+}
+.secone-left .booktable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 17px 29px;
+  height: 11px;
+  background-color: #ce1212;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+.secone-left .booktable:hover {
+  background-color: #e45454;
+}
+
+.watch {
+  color: black;
+  font-size: 22px;
+  transition: all 0.4s;
+}
+.watch:hover {
+  color: #e45454;
+}
+
+.fa-circle-play {
+  color: #ce1212;
+  font-size: 25px;
+}
+
+.secone-right {
+  max-width: 376px;
+  max-height: 376px;
+}
+.secone-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectwocontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectwo-header {
+  text-align: center;
+  margin: 20px auto;
+}
+.sectwo-header h3, .sectwo-header .secseven .secsevendiv h4, .secseven .secsevendiv .sectwo-header h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #37373f;
+  font-size: 17px;
+  font-weight: 100;
+  margin: 20px 0;
+}
+.sectwo-header h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+.sectwo-header h2 span {
+  color: #ce1212;
+}
+
+.sectwo-left {
+  width: 46%;
+  min-height: 500px;
+  background: url(../images/about.jpg) no-repeat left;
+  display: flex;
+  padding: 60px 50px;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.sectwo-left .left-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  min-height: 100px;
+  flex-direction: column;
+  background-color: #fff;
+}
+.sectwo-left .left-inside h4 {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 27px;
+  color: #37373f;
+  font-weight: 700;
+}
+.sectwo-left .left-inside p {
+  color: #ce1212;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.sectwo-right {
+  width: 40%;
+}
+.sectwo-right span {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+}
+.sectwo-right li {
+  padding: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+}
+.sectwo-right .fa-check {
+  color: #ce1212;
+  display: inline-block;
+  margin-right: 3px;
+}
+.sectwo-right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.sectwo-right .right-bottom {
+  background: url(../images/about-2.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectwo-right .right-bottom a {
+  display: flex;
+  width: 194px;
+  height: 194px;
+  justify-content: center;
+  align-items: center;
+}
+.sectwo-right .right-bottom a i {
+  font-size: 90px;
+}
+
+.secthree {
+  background-color: #eee;
+  display: flex;
+}
+.secthree .secthreecontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.secthree .secthreecontainer .activediv {
+  width: 30%;
+  height: 350px;
+  background-color: #ce1212;
+  padding: 40px;
+}
+.secthree .secthreecontainer .activediv h3, .secthree .secthreecontainer .activediv .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .activediv h4 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+}
+.secthree .secthreecontainer .activediv p {
+  padding: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.secthree .secthreecontainer .activediv a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #e45454;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.secthree .secthreecontainer .boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+  gap: 20px;
+}
+.secthree .secthreecontainer .boxes .box {
+  background-color: #fff;
+  padding: 20px;
+  height: 300px;
+  text-align: center;
+  width: 33%;
+  transition: all 0.4s;
+}
+.secthree .secthreecontainer .boxes .box:hover {
+  transform: scale(1.1);
+}
+.secthree .secthreecontainer .boxes .box h3, .secthree .secthreecontainer .boxes .box .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .boxes .box h4 {
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 14.6px;
+}
+.secthree .secthreecontainer .boxes .box i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ce1212;
+  font-size: 24px;
+  background-color: #fbe3e3;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.secthree .secthreecontainer .boxes .box p {
+  color: #37373f;
+}
+
+.secfour .secfourdiv {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/stats-bg.jpg) fixed;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.secfour .secfourdiv p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  width: 270px;
+}
+
+.secfive {
+  background-color: #eee;
+  padding: 70px 0;
+  height: 50vh;
+}
+.secfive .secfivecontainer {
+  padding: 0 20px;
+  width: 60%;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.secfive .secfivecontainer .right-div {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+}
+.secfive .secfivecontainer .right-div img {
+  width: 100%;
+  height: 100%;
+}
+.secfive .secfivecontainer .leftdiv {
+  max-width: 500px;
+}
+.secfive .secfivecontainer .leftdiv .stars {
+  margin-top: 5px;
+}
+.secfive .secfivecontainer .leftdiv .stars i {
+  display: inline-block;
+  color: #ffc107;
+}
+.secfive .secfivecontainer .leftdiv p {
+  padding-bottom: 20px;
+  font-style: italic;
+  font-size: 18px;
+}
+.secfive .secfivecontainer .leftdiv p i {
+  display: inline-block;
+  color: #ce1212;
+}
+.secfive .secfivecontainer .leftdiv h4 {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.secsix {
+  margin: 30px 0;
+}
+
+.secseven .secsevendiv {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/events-1.jpg), no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.secseven .secsevendiv h3, .secseven .secsevendiv h4 {
+  color: white;
+  font-size: 30px;
+  max-width: 70%;
+  margin-left: 20px;
+}
+.secseven .secsevendiv h4 {
+  max-width: 70%;
+  font-weight: 900;
+}
+.secseven .secsevendiv p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  max-width: 70%;
+  margin-left: 20px;
+}
+
+.seceight {
+  background-color: #eee;
+  padding: 50px 0;
+}
+.seceight .seceightcontainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.seceight .seceightcontainer .chef {
+  max-width: 32%;
+  overflow: hidden;
+  background-color: #fff;
+  min-height: 470px;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.seceight .seceightcontainer .chef:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
+}
+.seceight .seceightcontainer .chef:hover .chef-socials {
+  right: 8px;
+  opacity: 1;
+}
+.seceight .seceightcontainer .chef .chef-socials {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+.seceight .seceightcontainer .chef .chef-socials i {
+  display: block;
+  color: rgba(55, 55, 63, 0.4);
+  margin: 15px 12px;
+}
+.seceight .seceightcontainer .chef .chefimg {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+}
+.seceight .seceightcontainer .chef img {
+  width: 100%;
+  height: 100%;
+}
+.seceight .seceightcontainer .chef .chefinfo {
+  text-align: center;
+  height: auto;
+  padding: 10px;
+}
+.seceight .seceightcontainer .chef .chefinfo p {
+  margin-top: 10px;
+  font-style: italic;
+  color: #37373f;
+}
+.seceight .seceightcontainer .chef .chefinfo h3, .seceight .seceightcontainer .chef .chefinfo .secseven .secsevendiv h4, .secseven .secsevendiv .seceight .seceightcontainer .chef .chefinfo h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #37373f;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 5px;
+}
+.seceight .seceightcontainer .chef .chefinfo span {
+  color: #7f7f90;
+}
+
+.secnine {
+  padding: 70px 0;
+}
+.secnine .secninecontainer {
+  background-color: #eee;
+  height: 80vh;
+  padding: 0;
+  display: flex;
+}
+.secnine .secninecontainer .secnine-left {
+  width: 30%;
+  overflow: hidden;
+  height: 100%;
+}
+.secnine .secninecontainer .secnine-left img {
+  width: 100%;
+  height: 100%;
+}
+.secnine .secninecontainer .secnine-right {
+  width: 65%;
+  padding: 50px 40px;
+}
+.secnine .secninecontainer .secnine-right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.secnine .secninecontainer .secnine-right input {
+  padding: 10px 5px;
+  width: 28.2%;
+  border: 1px solid #7f7f90;
+  border-radius: 5px;
+  outline: none;
+}
+.secnine .secninecontainer .secnine-right input:focus {
+  outline: 1px solid #ce1212;
+  border: 1px solid #ce1212;
+}
+.secnine .secninecontainer .secnine-right textarea {
+  padding: 10px;
+  width: 99%;
+  border: 1px solid #7f7f90;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+.secnine .secninecontainer .secnine-right textarea:focus {
+  outline: 1px solid #ce1212;
+  border: 1px solid #ce1212;
+}
+.secnine .secninecontainer .secnine-right button {
+  margin: 0 auto;
+  background-color: #ce1212;
+  border: 0;
+  padding: 14px 60px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.secnine .secninecontainer .secnine-right button:hover {
+  background-color: #e45454;
+  cursor: pointer;
+}
+
+.secten-container .sectenbottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.secten-container .sectenbottom .sectenbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #eee;
+  width: 46%;
+  height: 100px;
+}
+.secten-container .sectenbottom .sectenbox .box-left i {
+  width: 56px;
+  height: 56px;
+  background-color: #ce1212;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.secten-container .sectenbottom .sectenbox .box-right h3, .secten-container .sectenbottom .sectenbox .box-right .secseven .secsevendiv h4, .secseven .secsevendiv .secten-container .sectenbottom .sectenbox .box-right h4 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+}
+.secten-container .sectencontact {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin: 30px 0;
+}
+.secten-container .sectencontact form input {
+  width: 97%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(108, 117, 125, 0.5058823529);
+  border-radius: 5px;
+}
+.secten-container .sectencontact form textarea {
+  width: 97%;
+  resize: none;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(108, 117, 125, 0.5058823529);
+  border-radius: 5px;
+}
+.secten-container .sectencontact form button {
+  margin: 10px auto;
+  display: block;
+  margin: 20px auto;
+  background-color: #ce1212;
+  border: 0;
+  padding: 14px 60px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.secten-container .sectencontact form button:hover {
+  background-color: #e45454;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background-color: #1f1f24;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 50px 0;
+}
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+}
+footer .footer-container .footer-box {
+  display: flex;
+  gap: 10px;
+}
+footer .footer-container .footer-box .icondiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .footer-container .footer-box .icondiv i {
+  display: block;
+  font-size: 20px;
+}
+footer .footer-container .footer-box .footertext h3, footer .footer-container .footer-box .footertext .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box .footertext h4 {
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+footer .footer-container .footer-box-social h3, footer .footer-container .footer-box-social .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box-social h4 {
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+footer .footer-container .footer-box-social .footer-social-icons {
+  display: flex;
+  gap: 5px;
+}
+footer .footer-container .footer-box-social i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+footer .footer-container .footer-box-social i:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .secthree {
+    background-color: #eee;
+    display: flex;
+  }
+  .secthree .secthreecontainer {
+    display: flex;
+    gap: 30px;
+  }
+  .secthree .secthreecontainer .activediv {
+    width: 40%;
+    height: 382px;
+    background-color: #ce1212;
+    padding: 40px;
+  }
+  .secthree .secthreecontainer .activediv h3, .secthree .secthreecontainer .activediv .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .activediv h4 {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+  }
+  .secthree .secthreecontainer .activediv p {
+    padding: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+  }
+  .secthree .secthreecontainer .activediv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #e45454;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .secthree .secthreecontainer .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .secthree .secthreecontainer .boxes .box {
+    background-color: #fff;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    width: 100%;
+  }
+  .secthree .secthreecontainer .boxes .box h3, .secthree .secthreecontainer .boxes .box .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .boxes .box h4 {
+    padding: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 14.6px;
+  }
+  .secthree .secthreecontainer .boxes .box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce1212;
+    font-size: 24px;
+    background-color: #fbe3e3;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .secthree .secthreecontainer .boxes .box p {
+    color: #37373f;
+  }
+  .sectwocontainer {
+    flex-direction: column;
+  }
+  .sectwocontainer .sectwo-left {
+    width: 60%;
+    margin: 20px auto;
+  }
+  .sectwocontainer .sectwo-right {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .fa-solid {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .yummy {
+    font-size: 25px;
+  }
+  .book {
+    width: 200px;
+    display: flex;
+    align-items: center;
+  }
+  .book a {
+    width: 115px;
+  }
+  .secone-left, .secone-right {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .secone-left p, .secone-right p {
+    margin: 10px 0;
+  }
+  .secone-left h1 {
+    font-size: 30px;
+  }
+  .secone-left .buttons {
+    flex-direction: column;
+    width: 124px;
+    margin: 0 auto;
+  }
+  .secone-left .buttons .watch {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .secfive {
+    background-color: #eee;
+    padding: 70px 0;
+    height: 50vh;
+  }
+  .secfive .secfivecontainer {
+    padding: 0 20px;
+    width: 60%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .secfive .secfivecontainer .right-div {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+  }
+  .secfive .secfivecontainer .right-div img {
+    width: 100%;
+    height: 100%;
+  }
+  .secfive .secfivecontainer .leftdiv {
+    max-width: 440px;
+  }
+  .secfive .secfivecontainer .leftdiv .stars {
+    margin-top: 5px;
+  }
+  .secfive .secfivecontainer .leftdiv .stars i {
+    display: inline-block;
+    color: #ffc107;
+  }
+  .secfive .secfivecontainer .leftdiv p {
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+  }
+  .secfive .secfivecontainer .leftdiv p i {
+    display: inline-block;
+    color: #ce1212;
+  }
+  .secfive .secfivecontainer .leftdiv h4 {
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+  .seceight {
+    background-color: #eee;
+    padding: 50px 0;
+  }
+  .seceight .seceightcontainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .seceight .seceightcontainer .chef {
+    max-width: 45%;
+    overflow: hidden;
+    background-color: #fff;
+    min-height: 470px;
+  }
+  .seceight .seceightcontainer .chef .chefimg {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+  }
+  .seceight .seceightcontainer .chef img {
+    width: 100%;
+    height: 100%;
+  }
+  .seceight .seceightcontainer .chef .chefinfo {
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+  .seceight .seceightcontainer .chef .chefinfo p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #37373f;
+  }
+  .seceight .seceightcontainer .chef .chefinfo h3, .seceight .seceightcontainer .chef .chefinfo .secseven .secsevendiv h4, .secseven .secsevendiv .seceight .seceightcontainer .chef .chefinfo h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #37373f;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5px;
+  }
+  .seceight .seceightcontainer .chef .chefinfo span {
+    color: #7f7f90;
+  }
+  .secnine {
+    padding: 70px 0;
+  }
+  .secnine .secninecontainer {
+    background-color: #eee;
+    height: 180vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .secnine .secninecontainer .secnine-left {
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+  }
+  .secnine .secninecontainer .secnine-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .secnine .secninecontainer .secnine-right {
+    width: 100%;
+    padding: 50px 0px;
+    height: 50%;
+  }
+  .secnine .secninecontainer .secnine-right form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  .secnine .secninecontainer .secnine-right input {
+    padding: 10px 5px;
+    width: 35%;
+    border: 1px solid #7f7f90;
+    border-radius: 5px;
+    outline: none;
+  }
+  .secnine .secninecontainer .secnine-right input:focus {
+    outline: 1px solid #ce1212;
+    border: 1px solid #ce1212;
+  }
+  .secnine .secninecontainer .secnine-right textarea {
+    padding: 10px;
+    width: 74%;
+    border: 1px solid #7f7f90;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+  }
+  .secnine .secninecontainer .secnine-right textarea:focus {
+    outline: 1px solid #ce1212;
+    border: 1px solid #ce1212;
+  }
+  .secnine .secninecontainer .secnine-right button {
+    margin: 0 auto;
+    background-color: #ce1212;
+    border: 0;
+    padding: 14px 60px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .secten-container .sectenbottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .secten-container .sectenbottom .sectenbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #eee;
+    width: 97%;
+    height: 100px;
+  }
+  .secten-container .sectenbottom .sectenbox .box-left i {
+    width: 56px;
+    height: 56px;
+    background-color: #ce1212;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  .secten-container .sectenbottom .sectenbox .box-right h3, .secten-container .sectenbottom .sectenbox .box-right .secseven .secsevendiv h4, .secseven .secsevendiv .secten-container .sectenbottom .sectenbox .box-right h4 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
+  }
+  .secten-container .sectencontact {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 30px 0;
+  }
+  .secten-container .sectencontact form input {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(108, 117, 125, 0.5058823529);
+    border-radius: 5px;
+  }
+  .secten-container .sectencontact form textarea {
+    width: 97%;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(108, 117, 125, 0.5058823529);
+    border-radius: 5px;
+  }
+  .secten-container .sectencontact form button {
+    margin: 10px auto;
+    display: block;
+    margin: 20px auto;
+    background-color: #ce1212;
+    border: 0;
+    padding: 14px 60px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  footer {
+    text-align: center;
+    background-color: #1f1f24;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 50px 0;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+  }
+  footer .footer-container .footer-box {
+    width: 47%;
+    display: flex;
+    gap: 10px;
+  }
+  footer .footer-container .footer-box .icondiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  footer .footer-container .footer-box .icondiv i {
+    display: block;
+    font-size: 20px;
+  }
+  footer .footer-container .footer-box .footertext h3, footer .footer-container .footer-box .footertext .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box .footertext h4 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  footer .footer-container .footer-box-social {
+    width: 47%;
+    text-align: start;
+  }
+  footer .footer-container .footer-box-social h3, footer .footer-container .footer-box-social .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box-social h4 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  footer .footer-container .footer-box-social .footer-social-icons {
+    display: flex;
+    gap: 5px;
+  }
+  footer .footer-container .footer-box-social i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 738px) {
+  .secthree {
+    background-color: #eee;
+    display: flex;
+  }
+  .secthree .secthreecontainer {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .secthree .secthreecontainer .activediv {
+    width: 63%;
+    height: 420px;
+    background-color: #ce1212;
+    padding: 40px;
+    margin: 0 auto;
+  }
+  .secthree .secthreecontainer .activediv h3, .secthree .secthreecontainer .activediv .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .activediv h4 {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+  }
+  .secthree .secthreecontainer .activediv p {
+    padding: 20px 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+  }
+  .secthree .secthreecontainer .activediv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #e45454;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .secthree .secthreecontainer .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .secthree .secthreecontainer .boxes .box {
+    background-color: #fff;
+    padding: 20px;
+    height: 220px;
+    text-align: center;
+    width: 100%;
+  }
+  .secthree .secthreecontainer .boxes .box h3, .secthree .secthreecontainer .boxes .box .secseven .secsevendiv h4, .secseven .secsevendiv .secthree .secthreecontainer .boxes .box h4 {
+    padding: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 14.6px;
+  }
+  .secthree .secthreecontainer .boxes .box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce1212;
+    font-size: 24px;
+    background-color: #fbe3e3;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .secthree .secthreecontainer .boxes .box p {
+    color: #37373f;
+  }
+  .secfive {
+    background-color: #eee;
+    padding: 70px 0;
+    height: 130vh;
+  }
+  .secfive .secfivecontainer {
+    padding: 0 20px;
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .secfive .secfivecontainer .right-div {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 196px;
+    height: 196px;
+    margin-top: 50px;
+  }
+  .secfive .secfivecontainer .right-div img {
+    width: 100%;
+    height: 100%;
+  }
+  .secfive .secfivecontainer .leftdiv {
+    max-width: 500px;
+  }
+  .secfive .secfivecontainer .leftdiv .stars {
+    margin-top: 5px;
+  }
+  .secfive .secfivecontainer .leftdiv .stars i {
+    display: inline-block;
+    color: #ffc107;
+    margin-right: 0;
+  }
+  .secfive .secfivecontainer .leftdiv p {
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+  }
+  .secfive .secfivecontainer .leftdiv p i {
+    display: inline-block;
+    color: #ce1212;
+  }
+  .secfive .secfivecontainer .leftdiv h4 {
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+  .seceight {
+    background-color: #eee;
+    padding: 50px 0;
+  }
+  .seceight .seceightcontainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seceight .seceightcontainer .chef {
+    max-width: 70%;
+    overflow: hidden;
+    background-color: #fff;
+    min-height: 470px;
+  }
+  .seceight .seceightcontainer .chef .chefimg {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 87%, 56% 100%, 25% 89%, 0 100%, 0 0);
+  }
+  .seceight .seceightcontainer .chef img {
+    width: 100%;
+    height: 100%;
+  }
+  .seceight .seceightcontainer .chef .chefinfo {
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+  .seceight .seceightcontainer .chef .chefinfo p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #37373f;
+  }
+  .seceight .seceightcontainer .chef .chefinfo h3, .seceight .seceightcontainer .chef .chefinfo .secseven .secsevendiv h4, .secseven .secsevendiv .seceight .seceightcontainer .chef .chefinfo h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #37373f;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5px;
+  }
+  .seceight .seceightcontainer .chef .chefinfo span {
+    color: #7f7f90;
+  }
+  .secnine {
+    padding: 70px 0;
+  }
+  .secnine .secninecontainer {
+    background-color: #eee;
+    height: 180vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .secnine .secninecontainer .secnine-left {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 30%;
+  }
+  .secnine .secninecontainer .secnine-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .secnine .secninecontainer .secnine-right {
+    width: 100%;
+    padding: 50px 0px;
+    height: 50%;
+  }
+  .secnine .secninecontainer .secnine-right form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  .secnine .secninecontainer .secnine-right input {
+    padding: 10px 5px;
+    width: 75%;
+    height: 30px;
+    border: 1px solid #7f7f90;
+    border-radius: 5px;
+    outline: none;
+  }
+  .secnine .secninecontainer .secnine-right input:focus {
+    outline: 1px solid #ce1212;
+    border: 1px solid #ce1212;
+  }
+  .secnine .secninecontainer .secnine-right textarea {
+    padding: 10px;
+    width: 74%;
+    border: 1px solid #7f7f90;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+  }
+  .secnine .secninecontainer .secnine-right textarea:focus {
+    outline: 1px solid #ce1212;
+    border: 1px solid #ce1212;
+  }
+  .secnine .secninecontainer .secnine-right button {
+    margin: 0 auto;
+    background-color: #ce1212;
+    border: 0;
+    padding: 14px 60px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .secten-container .sectenbottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .secten-container .sectenbottom .sectenbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #eee;
+    max-width: 94%;
+    height: 100px;
+  }
+  .secten-container .sectenbottom .sectenbox .box-left i {
+    width: 56px;
+    height: 56px;
+    background-color: #ce1212;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  .secten-container .sectenbottom .sectenbox .box-right h3, .secten-container .sectenbottom .sectenbox .box-right .secseven .secsevendiv h4, .secseven .secsevendiv .secten-container .sectenbottom .sectenbox .box-right h4 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
+  }
+  .secten-container .sectencontact {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 30px 0;
+  }
+  .secten-container .sectencontact form input {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(108, 117, 125, 0.5058823529);
+    border-radius: 5px;
+  }
+  .secten-container .sectencontact form textarea {
+    width: 97%;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(108, 117, 125, 0.5058823529);
+    border-radius: 5px;
+  }
+  .secten-container .sectencontact form button {
+    margin: 10px auto;
+    display: block;
+    margin: 20px auto;
+    background-color: #ce1212;
+    border: 0;
+    padding: 14px 60px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  footer {
+    text-align: center;
+    background-color: #1f1f24;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 50px 0;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+  }
+  footer .footer-container .footer-box {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+  }
+  footer .footer-container .footer-box .icondiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  footer .footer-container .footer-box .icondiv i {
+    display: block;
+    font-size: 20px;
+  }
+  footer .footer-container .footer-box .footertext h3, footer .footer-container .footer-box .footertext .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box .footertext h4 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  footer .footer-container .footer-box-social {
+    width: 90%;
+    text-align: start;
+  }
+  footer .footer-container .footer-box-social h3, footer .footer-container .footer-box-social .secseven .secsevendiv h4, .secseven .secsevendiv footer .footer-container .footer-box-social h4 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  footer .footer-container .footer-box-social .footer-social-icons {
+    display: flex;
+    gap: 5px;
+  }
+  footer .footer-container .footer-box-social i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
